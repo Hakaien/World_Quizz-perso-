@@ -1,0 +1,240 @@
+/* implant font pour colonne de gauche  */
+
+@font-face {
+    font-family: "looneyTitle";
+    src: url("font/Drifttype\ Solid.ttf");
+}
+
+@font-face {
+    font-family: "looney";
+    src: url("font/design.collection2.toontiei.ttf");
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    background: url("../img/background-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    margin: 1rem;
+}
+
+.form-check-input:hover, .form-check-label:hover {
+    cursor: pointer;
+}
+
+/* colonne de gauche fixe */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* doit pouvoir modifier son contenu pour s'adapter aux quizz et créer les allers-retours de bloc page */
+
+#corpusGHome, #corpusGResume {
+    height: 900px;
+    font-family: "looney";
+    font-size: larger;
+    color: white;
+}
+
+.colonneG {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+#bugsBunny, #bugsBunny2 {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#btn1 {
+    font-family: "looneyTitle";
+    box-shadow: 5px 5px 10px black;
+    background: #611017;
+    border: #611017;
+}
+
+#btn1:hover {
+    background: #a3440c;
+    color: black;
+}
+
+.colonneG input[type="radio"]:checked+label {
+    background: #a3440c;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    padding: .4rem;
+    width: 110%;
+}
+
+#colonneChoix {
+    text-align: left;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+
+/* Main corpus, adapté en fonction du contenu recherché */
+
+#vignetteCadre {
+    overflow-y: auto;
+    height: 900px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#vignette {
+    margin: auto;
+    box-shadow: 10px 10px 10px black;
+    background: #611017;
+}
+
+.card-title {
+    font-family: "looneyTitle";
+}
+
+.form-check {
+    margin: 1rem;
+}
+
+/* Règles pour l'encart prénom (id=askPrenom) */
+
+/* !!!!!!!!!!!!!!!! */
+
+/* Règles pour l'encart resume (id=resume) */
+
+#askPrenom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#askPrenom input {
+    align-self: center;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+/* ------ */
+
+#resume {
+    font-family: "looney";
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin: auto;
+}
+
+#resume img {
+    width: 90%;
+    align-self: center;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+/* ------ */
+
+#btnValid, #btnValid2 {
+    font-family: "looneyTitle";
+    box-shadow: 5px 5px 10px black;
+    background: #611017;
+    border: #611017;
+}
+
+#btnValid2 {
+    width: 60%;
+    align-self: center;
+}
+
+#btnValid:hover, #btnValid2:hover {
+    background: #a3440c;
+    color: black;
+}
+
+/* ------ */
+
+#askPrenom h2, #askPrenom input, #askPrenom p {
+    margin: 1rem;
+}
+
+#askPrenom p {
+    font-size: larger;
+    color: red;
+}
+
+/* Règles mise en forme pour corpusGResume */
+
+#contenuResume {
+    text-align: center;
+}
+
+#contenuResume img {
+    margin: auto;
+    width: 90%;
+}
+
+/* !!!!! */
+
+/* Règles de la zone de Quizz */
+
+#vignetteQuizz div {
+    font-family: "looney";
+    margin: 1rem;
+}
+
+.quizzTitle {
+    font-family: "looneyTitle";
+}
+
+.anecdote {
+    visibility: hidden;
+}
+
+.propositions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a3440c;
+    color: black;
+    box-shadow: 5px 5px 10px black;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.btnBefore, .btnAfter {
+    align-self: flex-end;
+    font-family: "looneyTitle";
+    box-shadow: 5px 5px 10px black;
+    background: #611017;
+    border: #611017;
+    border-radius: 10px;
+    height: 60px;
+    visibility: hidden;
+}
+
+.btnBefore:hover, .btnAfter:hover {
+    background: #a3440c;
+    color: black;
+}
+
+.zoneReponse {
+    border: 1px dashed red;
+    height: 120px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

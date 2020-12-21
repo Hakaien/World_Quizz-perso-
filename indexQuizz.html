@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- implant bootstrap -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/indexQuizz.css">
+
+    <title>TP World Quizz</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div></div>
+    </header>
+
+    <section id="mainCorpus" class="row">
+        <article id="corpusGHome" class="col-3 container">
+            <a href="http://127.0.0.1:5500/indexQuizz.html"><img id="bugsBunny" src="img/header.jpg"></a>
+            <div class="colonneG">
+                <p>Veuillez choisir un level <br> et <br> sélectionnez un quizz <br> avant de Lancer !!</p>
+            </div>
+            <div id="colonneChoix" class="colonneG">
+                <div class="form-check col-lg-4">
+                    <input class="gridRad form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                        value="débutant">
+                    <label class="form-check-label" for="gridRadios1"> Débutant </label>
+                </div>
+                <div class="form-check col-lg-4">
+                    <input class="gridRad form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                        value="confirmé">
+                    <label class="form-check-label" for="gridRadios2"> Confirmé </label>
+                </div>
+                <div class="form-check col-lg-4">
+                    <input class="gridRad form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                        value="expert">
+                    <label class="form-check-label" for="gridRadios3"> Expert </label>
+                </div>
+            </div>
+            <div class="colonneG">
+                <button id="btn1" class="report boutonForm btn btn-danger">Lancer</button>
+            </div>
+        </article>
+
+        <article id="corpusGResume" class="col-3 container">
+            <a href="http://127.0.0.1:5500/indexQuizz.html"><img id="bugsBunny2" src="img/header.jpg"></a>
+            <div id="contenuResume"></div>
+        </article>
+
+        <article id="vignetteCadre" class="col-9 row flex-wrap container">
+            <div id="vignette" class="card col-lg-5 col-md-6 text-white mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <img class="h-50 card-img-top" src="" alt="...">
+                    <div class="card-text row">
+                        <div class="form-check col-lg-4">
+                            <input class="selecteur form-check-input" type="radio" name="selecteurVignette"
+                                value="Select" id="selecteurVignette">
+                            <label class="selecteurLabel form-check-label" for="selecteurVignette"> Sélectionner
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="vignetteQuizz" class="container flex-column align-self-center">
+            <h2 class="quizzTitle"></h2>
+            <div class="question"></div>
+            <div class="anecdote"></div>
+            <section class="row flex-nowrap justify-content-center">
+                <div class="propositions col-2" id="prop0">(choix 1)</div>
+                <div class="propositions col-2" id="prop1">(choix 2)</div>
+                <div class="propositions col-2" id="prop2">(choix 3)</div>
+                <div class="propositions col-2" id="prop3">(choix 4)</div>
+            </section>
+            <section id="footerReponse" class="row justify-content-around">
+                <button class="btnBefore">précédent</button>
+                <div class="zoneReponse">(zone de réponse)</div>
+                <button class="btnQuizz btnAfter">suivant</button>
+            </section>
+        </article>
+
+    </section>
+
+    <!-- Implant JQuery -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/indexQuizz.js" type="text/JavaScript"></script>
+</body>
+
+</html>
